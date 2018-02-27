@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html style="-webkit-app-region: drag">
+<head style="-webkit-app-region: drag">
+	<title>time</title>
+</head>
+<body style="-webkit-app-region:drag">
+	<p id="time1" style="color: blueviolet;
+	padding: 0px;
+	margin: 0px;
+	font-size: 96px;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;"></p>
+	<script>
+	    function mytime(){
+	        var a = new Date();
+	        var hours = a.getHours();
+	        var minutes = a.getMinutes();
+	        var seconds = a.getSeconds();
+	        if(seconds<10){
+	        	seconds = "0"+seconds;
+	        }
+	        document.getElementById("time1").innerHTML = hours+":"+minutes+":"+seconds;
+	        }
+	    setInterval(function() {mytime()},1000);
+	</script>
+</body>
+</html>

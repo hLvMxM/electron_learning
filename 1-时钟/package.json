@@ -1,0 +1,14 @@
+{
+  "name": "clock",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "my clock and just for learning",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "hlvmxm",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.2"
+  }
+}
